@@ -14,5 +14,3 @@ $router = new Router($_SERVER['REQUEST_URI']);
     print_r('Метод: '.$router->getMethodPrefix().$router->getAction().PHP_EOL);
     echo "Параметры";
     print_r($router->getParams());
-
-echo $_SERVER['REQUEST_URI'];
