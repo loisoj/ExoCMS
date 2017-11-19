@@ -63,8 +63,35 @@ class Router{
 
     $path_parts = explode('/', $path);
 
+    if (count($path_parts)){
+      //Получаем язык или роут первым элементом
 
-    echo "<pre>"; print_r($path_parts);
+      if(in_array(strtolower(current($path_parts)), array_keys($routes) ) ){
+        $this->route = strtolower(current($path_parts));
+        $this->method_prefix = isset($routes[$this->route]) ? $routes[$this->route] : '';
+        array_shift($path_parts);
+      }elseif (in_array(strtolower(current($path_parts)), Config::get('languages') )) {
+        $this->languages = strtolower(current($path_parts));
+        array_shift($path_parts);
+      }
+      //Получаем контроллер- след. элемент массива
+      if(current($path_parts)){
+        $this->controller = strtolower(current($path_parts));
+        array_shift($path_parts);
+      }
+
+      //Получаем Экшен
+      if(current($path_parts)){
+        $this->action = strtolower(current($path_parts));
+        array_shift($path_parts);
+      }
+
+
+      //получение всех параметров
+      $this->params = $path_parts;
+
+
+    }
   }
 
 }
