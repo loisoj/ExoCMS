@@ -6,8 +6,15 @@
 class PagesController extends Controller
 {
 
+
+public function __construct($data = array()){
+  parent::__construct($data);
+  $this->model = new Page();
+}
+
+
 public function index(){
-  $this->data['test_content'] = 'Тут у нас будут списки страниц';
+  $this->data['pages'] = $this->model->getList();
 }
 
 public function view(){
@@ -15,8 +22,7 @@ public function view(){
 
   if(isset($params[0])){
     $alias = strtolower($params[0]);
-
-    $this->data['content'] = 'Теперь мы на странице по адрессу ' . $alias;
+    $this->data['page'] = $this->model->getByAlias($alias);
   }
 }
 }

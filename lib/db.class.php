@@ -4,10 +4,10 @@ class DB{
   protected $connection;
 
   public function __construct($host, $user, $password, $db_name){
-      $this->connection = new mysqli($host,$user,$password,$db_name);
+      $this->connection = new mysqli($host, $user, $password, $db_name);
 
       if (mysqli_connect_error() ) {
-        throw new Exception('Не могу соединиться с базой :(');
+        throw new Exception('Не могу соединиться с базой');
       }
 
   }

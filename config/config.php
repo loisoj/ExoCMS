@@ -17,7 +17,7 @@ Config::set('default_controller', 'pages');
 Config::set('default_action', 'index');
 
 //Соединение с БД SQL
-Config::set('db.host','localhost'); //Сервер
-Config::set('db.user','root'); //Пользователь
-Config::set('db.password',''); //Пароль
-Config::set('db.db_name','mvc'); //Имя таблицы
+Config::set('db.host','localhost');
+Config::set('db.user','root');
+Config::set('db.password','');
+Config::set('db.db_name','mvc');
