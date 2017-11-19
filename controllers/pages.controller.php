@@ -7,7 +7,7 @@ class PagesController extends Controller
 {
 
 public function index(){
-  echo "Тут у нас будут списки страниц";
+  $this->data['test_content'] = 'Тут у нас будут списки страниц';
 }
 
 public function view(){
@@ -16,7 +16,7 @@ public function view(){
   if(isset($params[0])){
     $alias = strtolower($params[0]);
 
-    echo "Теперь мы на странице по адрессу " . $alias;
+    $this->data['content'] = 'Теперь мы на странице по адрессу ' . $alias;
   }
 }
 }
