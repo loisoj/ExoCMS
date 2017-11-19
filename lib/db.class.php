@@ -20,8 +20,8 @@ class DB{
     $result = $this->connection->query($sql);
 
       if(mysqli_error($this->connection) ){
-        throw new Exception(mysqli_error($this->connection));
-
+        echo "Ууупс..что то случилось ";
+      //print_r(mysqli_error($this->connection)); //режим ошибок DB
       }
 
       if(is_bool($result) ){
