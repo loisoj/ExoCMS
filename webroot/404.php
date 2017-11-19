@@ -1,4 +1,6 @@
-<html><head>
+<!DOCTYPE html>
+<html>
+<head>
 		<title>404 / Not Found</title>
 
 		<link href="http://fonts.googleapis.com/css?family=Prata" rel="stylesheet" type="text/css">
@@ -81,7 +83,8 @@
 			<h1 class=" show">Не стоило Вам сюда заходить.</h1>
 		</div>
 
-		<script>
+
+    <script type="text/javascript">
 
 			/**
 			 * Copyright (C) 2016 Hakim El Hattab, http://hakim.se
@@ -405,4 +408,5 @@
 		</script>
 
 
-</body></html>
+</body>
+</html>
