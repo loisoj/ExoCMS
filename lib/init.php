@@ -18,3 +18,7 @@ function __autoload($class_name){
   }
 
 }
+
+function _lang_($key, $default_value = ''){
+  return Lang::get($key, $default_value);
+}
