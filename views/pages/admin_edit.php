@@ -3,7 +3,7 @@
 <form  action="" method="post">
   <input type="hidden" name="id" value="<?=$data['page']['id']?>">
   <div class="form-group">
-    <label for="alias">Псевдоним</label>
+    <label for="alias">URL</label>
     <input type="text" name="alias" id="alias" value="<?=$data['page']['alias']?>" class="form-control">
   </div>
 

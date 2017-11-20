@@ -62,7 +62,7 @@
 
 
 
-<?=_lang_('lng.test','default value')?>
+
 
 
 
