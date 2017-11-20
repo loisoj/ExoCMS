@@ -1,6 +1,6 @@
 <?php
 
-Config::set('site_name', 'Имя Вашего Сайта');
+Config::set('site_name', 'eXo');
 
 Config::set('languages', array('en', 'fr', 'ru'));
 
