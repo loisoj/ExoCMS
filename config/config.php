@@ -21,3 +21,6 @@ Config::set('db.host','localhost');
 Config::set('db.user','root');
 Config::set('db.password','');
 Config::set('db.db_name','mvc');
+
+//Соль, соль, соль...Посолим тут все
+Config::set('salt', 'stp8kwcle45me32jf6gbekr');//не забудь засыпать свою соль

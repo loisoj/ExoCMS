@@ -17,22 +17,24 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <?php if( Session::get('login') ) {?>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="/admin/pages/">Страницы</a>
+                <a class="nav-link" href="/admin/users/logout">Выход</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/admin/contacts/">Контакты</a>
+                <!-- <a class="nav-link" href="/admin/contacts/">Контакты</a> -->
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Управление</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="/admin/pages/">Страницами</a>
+                  <a class="dropdown-item" href="/admin/contacts">Сообщениями</a>
+                  <!-- <a class="dropdown-item" href="#">Something else here</a> -->
                 </div>
               </li>
             </ul>
+          <?php } ?>
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

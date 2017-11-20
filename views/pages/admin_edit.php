@@ -22,5 +22,5 @@
     <input type="checkbox" name="is_published" id="is_published" <?php if($data['page']['is_published']){ ?>checked ="checked"<?php } ?> >
   </div>
 
-  <input type="submit" class="btn btn-success">
+  <input type="submit" class="btn btn-success" value="Изменить">
 </form>

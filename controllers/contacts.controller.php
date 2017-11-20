@@ -15,7 +15,8 @@ public function __construct($data = array()){
     }
   }
 
+  public function admin_index(){
+    $this->data = $this->model->getList();
+  }
+
 }
-
-
- ?>

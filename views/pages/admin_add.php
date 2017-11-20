@@ -21,5 +21,5 @@
     <input type="checkbox" name="is_published" id="is_published" checked ="checked" >
   </div>
 
-  <input type="submit" class="btn btn-success">
+  <input type="submit" class="btn btn-success" value="Добавить">
 </form>
