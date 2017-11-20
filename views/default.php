@@ -21,6 +21,9 @@
                 <a class="nav-link" href="/pages/">Страницы</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="/gallery">Галерея</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="/contacts/">Напишите нам</a>
               </li>
               <li class="nav-item">

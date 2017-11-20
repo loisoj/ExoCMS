@@ -1,7 +1,7 @@
 <?php
 
 /**
- *
+ * ExoCms
  */
 class PagesController extends Controller
 {

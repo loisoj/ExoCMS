@@ -21,7 +21,8 @@ class View{
       $path = self::getDefaultViewPath();
     }
     if (!file_exists($path)) {
-      throw new Exception("Нету тут файла по заданному пути: ". $path);
+      //throw new Exception("Нету тут файла по заданному пути: ". $path);
+require_once '404.php';
     }
     $this->path = $path;
     $this->data = $data;

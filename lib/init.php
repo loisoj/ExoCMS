@@ -14,7 +14,8 @@ function __autoload($class_name){
   } elseif (file_exists($model_path)) {
     require_once($model_path);
   } else {
-    throw new Exception('Не удалось подключить класс: '.$class_mane);
+    //throw new Exception('Не удалось подключить класс: '.$class_nane);
+require_once '404.php';
   }
 
 }
