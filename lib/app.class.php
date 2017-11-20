@@ -35,7 +35,7 @@ $content = $view_object->render();
     }
 
     $layout = self::$router->getRoute();
-    $layout_path = VIEWS_PATH.DS.$layout.'.html';
+    $layout_path = VIEWS_PATH.DS.$layout.'.php';
     $layout_view_object = new View (compact('content'), $layout_path);
     echo $layout_view_object->render();
   }
