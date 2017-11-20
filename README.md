@@ -10,7 +10,7 @@
 
 Генерация базы данных(SQL запрос):
 
-create database exo;
+```create database exo;
 
 use exo;
 
@@ -43,13 +43,13 @@ create table `users` (
 `password` char(32) not null,
 `is_active` tinyint(1) unsigned default '1',
 primary key (`id`)
-) engine=InnoDB default charset=utf8;
+) engine=InnoDB default charset=utf8;```
 
 ///
 Генерация администратора, пока что SQL запроссом(не знаю дойдут ли руки):
 
-INSERT INTO users
-SET login = 'admin', email='admin@your-site.com', role='admin', `password` = md5('stp8kwcle45me32jf6gbekradmin');
+```INSERT INTO users
+SET login = 'admin', email='admin@your-site.com', role='admin', `password` = md5('stp8kwcle45me32jf6gbekradmin');```
 
 
 ///
